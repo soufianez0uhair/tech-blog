@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tech-blog/static/css/main.ac94a3e1.css",
-    "main.js": "/tech-blog/static/js/main.6c70ef96.js",
+    "main.js": "/tech-blog/static/js/main.fd5d2f27.js",
     "index.html": "/tech-blog/index.html",
     "main.ac94a3e1.css.map": "/tech-blog/static/css/main.ac94a3e1.css.map",
-    "main.6c70ef96.js.map": "/tech-blog/static/js/main.6c70ef96.js.map"
+    "main.fd5d2f27.js.map": "/tech-blog/static/js/main.fd5d2f27.js.map"
   },
   "entrypoints": [
     "static/css/main.ac94a3e1.css",
-    "static/js/main.6c70ef96.js"
+    "static/js/main.fd5d2f27.js"
   ]
 }
