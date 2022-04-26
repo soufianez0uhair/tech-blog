@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-purple: #5F0A87;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  padding: 2rem 5rem;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  object-fit: cover
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+header h1 span {
+  color: var(--color-purple)
+}
+
+.navbar {
+  gap: 2rem;
+}
+
+.icon--menu {
+  display: none;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.navbar li a:hover {
+  color: var(--color-purple)
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.blog {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  position: relative;
+}
+
+.blog__details {
+  padding: 2rem 1rem;
+}
+
+.blog__details h2{
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.blog__details p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-purple)
+}
+
+.blog__overview {
+  position: absolute;
+  padding: 1.5rem 2rem;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #fff;
+  top: 100%;
+  transition: all .3s ease;
+  overflow-y: auto;
+}
+
+.blog__overview h2{
+  font-size: 1.7rem;
+  margin-bottom: .3rem;
+}
+
+.blog__overview p{
+  font-size: 1.4rem;
+}
+
+.blog:hover .blog__overview {
+  top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+
+input {
+  border: none;
+  border-bottom: .1rem solid rgba(0,0,0,.5);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: .1rem solid var(--color-purple);
+}
+
+#title {
+  width: 70rem;
+  padding: 1rem;
+  font-size: 2rem
+}
+
+#author {
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 20rem;
+}
+
+#overview {
+  width: 80rem;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+#img {
+  width: 30rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.btn-box {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.btn--add-blog {
+  border: .1rem solid var(--color-purple);
+  font-size: 1.7rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: var(--color-purple);
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+
+.btn--add-blog:hover {
+  color: #fff;
+  background: var(--color-purple);
+}
+
+.about {
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 3.5rem;
+}
+
+.about p {
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+}
+
+.icon--github {
+  font-size: 1.7rem;
+  transition: transform .2s ease;
+}
+
+.icon--github:hover {
+  transform: scale(1.5) rotate(50deg)
+}
+
+footer {
+  display: flex;
+  background: #fff;
+  padding: .5rem;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  gap: 1rem;
+  transition: transform .2s ease-in-out;
+}
+
+.icon-github {
+  transform: scale(1.3) rotate(50deg)
+}
+
+.notfound {
+  text-align: center
+}
+
+.notfound h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.notfound img {
+  width: 30rem;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10rem 2rem;
+    padding-bottom: 0;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .5rem .7rem rgba(0,0,0,.2)
+  }
+  .icon--menu {
+    display: inline-block;
+    font-size: 2.3rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    background: #fff;
+    width: 25rem;
+    height: calc(100vh - 7rem);
+    padding-top: 2rem;
+    transition: transform .3s ease-in-out
+  }
+  li {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .input-box {
+    flex-direction: column;
+  }
+  #title, #overview {
+    width: 90%;
+  }
+}
+
+.show {
+  transform: translateX(0)
+}
