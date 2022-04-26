@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/soufianez0uhair/tech-blog/static/css/main.ac94a3e1.css",
+    "main.js": "/soufianez0uhair/tech-blog/static/js/main.7c3dd47f.js",
+    "index.html": "/soufianez0uhair/tech-blog/index.html",
+    "main.ac94a3e1.css.map": "/soufianez0uhair/tech-blog/static/css/main.ac94a3e1.css.map",
+    "main.7c3dd47f.js.map": "/soufianez0uhair/tech-blog/static/js/main.7c3dd47f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac94a3e1.css",
+    "static/js/main.7c3dd47f.js"
+  ]
+}
