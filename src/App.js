@@ -34,10 +34,10 @@ function App() {
     overview: 'Originally, React mainly used class components, which can be strenuous at times as you always had to switch between classes, higher-order components, and render props. With React hooks, you can now do all these without switching, using functional components.'
   }]))
   return (
-    <Router>
+    <Router basename="/tech-blog">
       <Header />
       <BlogsContext.Provider value={{blogs, setBlogs}}>
-        <Routes basename="/tech-blog">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/addblog" element={<AddBlog />} />
           <Route path="/about" element={<About />} />
