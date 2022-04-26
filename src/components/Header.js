@@ -11,13 +11,13 @@ export default function Header() {
            <GrMenu className="icon--menu" onClick={navbarToggle} />
            <ul className="navbar">
                <li>
-                   <Link to="tech-blog">Home</Link>
+                   <Link to="/">Home</Link>
                </li>
                <li>
-                   <Link to="addblog">Add Blog</Link>
+                   <Link to="/addblog">Add Blog</Link>
                </li>
                <li>
-                   <Link to="about">About</Link>
+                   <Link to="/about">About</Link>
                </li>
            </ul>
        </header>

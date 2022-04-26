@@ -32,7 +32,7 @@ export default function AddBlog() {
             ]
         })
         setId(id + 1)
-        navigate('tech-blog')
+        navigate('/')
     }
     return (
         <form onSubmit={(e) => handleSubmit(e)} >

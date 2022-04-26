@@ -37,10 +37,10 @@ function App() {
     <Router>
       <Header />
       <BlogsContext.Provider value={{blogs, setBlogs}}>
-        <Routes>
-          <Route path="tech-blog" element={<Home />} />
-          <Route path="addblog" element={<AddBlog />} />
-          <Route path="about" element={<About />} />
+        <Routes basename="/tech-blog">
+          <Route path="/" element={<Home />} />
+          <Route path="/addblog" element={<AddBlog />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BlogsContext.Provider>
